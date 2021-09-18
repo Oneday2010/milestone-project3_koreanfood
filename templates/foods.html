@@ -8,11 +8,11 @@
 </head>
 
 <body>
-    {% for food in foods %}
-    {{ food.food_name}}<br>
-    {{ food.category_name }}<br>
-    {{ food.food_description }}<br>
-    {{ food.cooking_difficulty }}<br>
+    {% for foods in foods %}
+    {{ foods.food_name}}<br>
+    {{ foods.category_name }}<br>
+    {{ foods.food_description }}<br>
+    {{ foods.cooking_difficulty }}<br>
     {% endfor %}
 </body>
 
