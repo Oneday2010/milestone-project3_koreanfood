@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Korean food recipes</title>
-</head>
 
-<body>
-    {% for foods in foods %}
-    {{ foods.food_name}}<br>
-    {{ foods.category_name }}<br>
-    {{ foods.food_description }}<br>
-    {{ foods.cooking_difficulty }}<br>
-    {% endfor %}
-</body>
+{% for foods in foods %}
+{{ foods.food_name}}<br>
+{{ foods.category_name }}<br>
+{{ foods.food_description }}<br>
+{{ foods.cooking_difficulty }}<br>
 
-</html>
+{% endfor %}
+
+{% endblock %}
