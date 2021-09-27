@@ -1,4 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+:root {
+    --fontFamily: 'Poppins', sans-serif;
+    --navbarBgColor: #362E24;
+    --bodyContainerColor: rgb(252, 243, 233);
+}
+
+
+html {
+    height: auto;
+
+
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fontFamily);
+
+}
 
 
 
@@ -21,10 +44,10 @@
     background-color: #ff9a80;
     
 }
-.nav-wrapper {
+
+.heading_color {
     color: #8d0000;
 }
-
 .flashes h4 {
     line-height: 2;
 }
