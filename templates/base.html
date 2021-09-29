@@ -20,8 +20,7 @@
     <header>
         <!-- top navbar -->
         <nav class="nav-extended text-shadow  darken-1">
-            <div class="nav-wrapper"><img src="static/images/k_food_logo.png"
-                class="logoimg" alt="logo image">
+            <div class="nav-wrapper"><img src="static/images/k_food_logo.png" class="logoimg" alt="logo image">
                 <a href="{{ url_for('get_foods') }}" class="brand-logo">Korean food recipes</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
@@ -29,7 +28,9 @@
                     {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li><a href="{{ url_for('add_recipes') }}">New Recipies</a></li>
-                    <li><a href="#">Manage Categories</a></li>
+                    {% if session.user|lower == "admin"|lower %}
+                    <li><a href="{{ url_for('get_categories') }}">Manage Categories</a></li>
+                    {% endif %}
                     <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
                     <li><a href="{{ url_for('login') }}">Log In</a></li>
@@ -49,7 +50,9 @@
             {% if session.user %}
             <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="{{ url_for('add_recipes') }}">New Recipies</a></li>
-            <li><a href="#">Manage Categories</a></li>
+            {% if session.user|lower == "admin"|lower %}
+            <li><a href="{{ url_for('get_categories') }}">Manage Categories</a></li>
+            {% endif %}
             <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
             <li><a href="{{ url_for('login') }}">Log In</a></li>
