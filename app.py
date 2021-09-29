@@ -23,7 +23,13 @@ mongo = PyMongo(app)
 def get_foods():
     foods = list(mongo.db.foods.find())
     return render_template("foods.html", foods=foods)
+    
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    foods = list(mongo.db.foods.find({"$text": {"$search": query}}))
+    return render_template("foods.html", foods=foods)   
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
