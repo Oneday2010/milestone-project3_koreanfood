@@ -24,16 +24,12 @@
 <div class="card">
     {% for foods in foods %}
     <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="{{ foods.food_img}}">
+        <img class="activator" src="{{ foods.food_img}}"><i class="btn material-icons right "><a href="#">check the recipe</a></i>
     </div>
-    <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4"> <strong>{{ foods.food_name}}</strong> :
-            {{ foods.category_name }}<i class="material-icons right">Recipes</i></span>
-        <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
+
+    <div class="card-content ">
         <span class="card-title grey-text text-darken-4"> <strong>{{ foods.food_name}}</strong> :
-            {{ foods.category_name }}<i class="material-icons right">close</i></span>
+            {{ foods.category_name }}</span>
         <p>{{ foods.food_description }}</p>
         <p><em>by: {{ foods.created_by }}</em></p>
         {% if session.user|lower == foods.created_by|lower %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+    {% for foods in foods %}
+    <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{ foods.food_img}}"><i class="btn material-icons right ">check the recipe</i>
+    </div>
+
+    <div class="card-content ">
+        <span class="card-title grey-text text-darken-4"> <strong>{{ foods.food_name}}</strong> :
+            {{ foods.category_name }}</span>
+        <p>{{ foods.food_description }}</p>
+        <p><em>by: {{ foods.created_by }}</em></p>
+        {% if session.user|lower == foods.created_by|lower %}
+        <a href="{{ url_for('delete_recipes', foods_id=foods._id) }}" class="btn-small green accent-4">Delete</a>
+        <a href="{{ url_for('edit_recipes', foods_id=foods._id) }}" class="btn-small red lighten-1">Edit</a>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

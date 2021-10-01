@@ -35,19 +35,20 @@ body {
     width: 45px;
     height: 45px;
     margin: 5px;
-    
+
 }
 
 
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     background-color: #ff9a80;
-    
+
 }
 
 .heading_color {
     color: #8d0000;
 }
+
 .flashes h4 {
     line-height: 2;
 }
@@ -62,6 +63,17 @@ body {
 }
 
 .card-image {
-    width:50%;
-    height:50%;;
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.btn {
+    color: #fff;
+    font-weight: 500;
+    background-color: #e53834;
 }
