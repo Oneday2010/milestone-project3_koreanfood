@@ -25,7 +25,7 @@
         <!-- food name -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix red-text text-darken-4"></i>
+                <i class="fas fa-utensils  prefix red-text text-darken-4"></i>
                 <input id="food_name" name="food_name" minlength="5" value="{{ foods.food_name }}" maxlength="50"
                     type="text" class="validate" required>
                 <label for="food_name">Food Name</label>
@@ -50,14 +50,14 @@
                     class="materialize-textarea validate" required>
                     {{- foods.cooking_level -}}
                 </textarea>
-                <label for="cooking_level">Cooking level</label>
+                <label for="cooking_level">Cooking level (Easy? More effort? or A challange)</label>
             </div>
         </div>
 
 
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <i class="fas fa-carrot  prefix red-text text-darken-4"></i>
                 <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5" maxlength="200"
                     class="materialize-textarea validate" required>
                     {{- foods.recipe_ingredients -}}
@@ -67,7 +67,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <i class="fas fa-flask prefix red-text text-darken-4"></i>
                 <textarea id="recipe_method" name="recipe_method" minlength="5" maxlength="200"
                     class="materialize-textarea validate" required>
                     {{- foods.recipe_method -}}

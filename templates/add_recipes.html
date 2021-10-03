@@ -19,7 +19,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-folder-plus prefix red-text text-darken-4"></i>
+                <i class="fas fa-utensils prefix red-text text-darken-4"></i>
                 <input id="food_name" name="food_name" minlength="3" maxlength="50" type="text" class="validate"
                     required>
                 <label for="food_name">Food Name</label>
@@ -27,14 +27,10 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-folder-open prefix red-text text-darken-4"></i>
-                <select id="cooking_level" name="cooking_level" class="validate" required>
-                    <option value="" disabled selected>cooking level</option>
-                    {% for foods in foods %}
-                    <option value="{{ foods.cooking_level }}">{{ foods.cooking_level }}</option>
-                    {% endfor %}
-                </select>
-                <label for="cooking_level">cooking level</label>
+                <i class="fas fa-pepper-hot prefix red-text text-darken-4"></i>
+                <input id="cooking_level" name="cooking_level" minlength="3" maxlength="50" type="text" class="validate"
+                    required>
+                <label for="cooking_level">Easy? More effort? or A challange</label>
             </div>
         </div>
         <div class="row">
@@ -47,7 +43,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <i class="far fa-image prefix red-text text-darken-4"></i>
                 <textarea id="food_img" name="food_img" minlength="5" class="materialize-textarea validate"
                     required></textarea>
                 <label for="food_img"><a href="https://cloudinary.com">Upload image</a></label>
@@ -55,7 +51,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <i class="fas fa-carrot prefix red-text text-darken-4"></i>
                 <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
                     class="materialize-textarea validate" required></textarea>
                 <label for="recipe_ingredients">Ingredients/Ingredients></label>
@@ -63,7 +59,7 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <i class="fas fa-flask prefix red-text text-darken-4"></i>
                 <textarea id="recipe_method" name="recipe_method" minlength="5" class="materialize-textarea validate"
                     required></textarea>
                 <label for="recipe_method">Method</label>

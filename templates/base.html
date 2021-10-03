@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
-    <title>Korean food recipes</title>
+    <title>K-Food recipes</title>
 </head>
 
 <body>
@@ -20,8 +20,10 @@
     <header>
         <!-- top navbar -->
         <nav class="nav-extended text-shadow  darken-1">
-            <div class="nav-wrapper"><class="logoimg" alt="logo image">
-                <a href="{{ url_for('get_foods') }}" class="brand-logo">Korean food recipes</a>
+            <div class="nav-wrapper">
+
+                <a href="{{ url_for('get_foods') }}" class="brand-logo">K-Food recipes</a>
+                <img src="static/images/k_food_logo.png" class="logoImg" alt="logo image">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_foods') }}">Home</a></li>
@@ -37,7 +39,11 @@
                     <li><a href="{{ url_for('register') }}">Register</a></li>
                     {% endif %}
 
+                    <li><a href="{{ url_for('get_foods') }}"><i class="fas fa-search-plus"></i></a></li>
+
+
                 </ul>
+
             </div>
         </nav>
 

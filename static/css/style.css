@@ -30,12 +30,13 @@ body {
 
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
-
-.logoimg {
+.brand-logo {
+    margin-left: 70px;
+}
+.logoImg {
     width: 45px;
     height: 45px;
-    margin: 5px;
-
+    margin: 10px;
 }
 
 
@@ -68,7 +69,7 @@ body {
     background-color: #e53834;
 }
 
-.food_img{
+.food_img {
     width: 50%;
     height: 50%;
 }
