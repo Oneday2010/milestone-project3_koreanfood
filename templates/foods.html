@@ -7,7 +7,7 @@
     <form action="{{ url_for('search') }}" method="post" class="col s12">
         <div class="row valign-wrapper center-align">
             <div class="input-field col s12 m8">
-                <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                <i class="fas fa-search prefix red-text text-darken-4"></i>
                 <input type="text" name="query" id="query" minlength="3" class="validate" required>
                 <label for="query">Search Tasks</label>
             </div>
@@ -21,21 +21,46 @@
     </form>
 </div>
 {% if foods|length > 0 %}
-<div class="card">
+<div class="row">
     {% for foods in foods %}
-    <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="{{ foods.food_img}}"><i class="btn material-icons right "><a href="#">check the recipe</a></i>
-    </div>
+    <div class="col s12 m6">
+        <div class="card large">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{{ foods.food_img}}">
+            </div>
 
-    <div class="card-content ">
-        <span class="card-title grey-text text-darken-4"> <strong>{{ foods.food_name}}</strong> :
-            {{ foods.category_name }}</span>
-        <p>{{ foods.food_description }}</p>
-        <p><em>by: {{ foods.created_by }}</em></p>
-        {% if session.user|lower == foods.created_by|lower %}
-        <a href="{{ url_for('delete_recipes', foods_id=foods._id) }}" class="btn-small green accent-4">Delete</a>
-        <a href="{{ url_for('edit_recipes', foods_id=foods._id) }}" class="btn-small red lighten-1">Edit</a>
-        {% endif %}
+
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{ foods.food_name }}<i
+                        class="fas fa-book right"></i></span>
+                <p>{{ foods.cooking_difficulty  }}</p>
+                <p>{{ foods.food_description }}</p>
+                <p><em>by: {{ foods.created_by }}</em></p>
+            </div>
+
+
+
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{ foods.food_name }}<i
+                        class="fas fa-times-circle right"></i></span>
+
+                <p><strong>Ingredients</strong><br>{{ foods.recipe_ingredients }}</p><br>
+                <p><strong>method</strong><br>{{ foods.recipe_method }}</p><br>
+                <p><em>by: {{ foods.created_by }}</em></p>
+
+            </div>
+            <div class="card-action">
+                
+                {% if session.user|lower == foods.created_by|lower %}
+                <a href="{{ url_for('delete_recipes', foods_id=foods._id) }}"
+                    class="btn-small green accent-4">Delete</a>
+                <a href="{{ url_for('edit_recipes', foods_id=foods._id) }}"
+                    class="btn-small light-blue lighten-1">Edit</a>
+                {% endif %}
+            </div>
+        </div>
+
+
     </div>
     {% endfor %}
 </div>

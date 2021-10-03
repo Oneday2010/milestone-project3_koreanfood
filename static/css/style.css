@@ -62,18 +62,13 @@ body {
     line-height: 42px;
 }
 
-.card-image {
-    width: 50%;
-    height: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-
-}
-
 .btn {
     color: #fff;
     font-weight: 500;
     background-color: #e53834;
+}
+
+.food_img{
+    width: 50%;
+    height: 50%;
 }
