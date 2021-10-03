@@ -12,12 +12,12 @@
                 <select id="category_name" name="category_name" class="validate" required>
                     <option value="" disabled selected>Choose Category</option>
                     {% for category in categories %}
-                            {% if category.category_name == foods.category_name %}
-                                <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
-                            {% else %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                            {% endif %}
-                        {% endfor %}
+                    {% if category.category_name == foods.category_name %}
+                    <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                    {% else %}
+                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                    {% endif %}
+                    {% endfor %}
                 </select>
                 <label for="category_name">Food Category</label>
             </div>
@@ -26,8 +26,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix red-text text-darken-4"></i>
-                <input id="food_name" name="food_name" minlength="5" value="{{ foods.food_name }}" maxlength="50" type="text" class="validate"
-                    required>
+                <input id="food_name" name="food_name" minlength="5" value="{{ foods.food_name }}" maxlength="50"
+                    type="text" class="validate" required>
                 <label for="food_name">Food Name</label>
             </div>
         </div>
@@ -40,6 +40,39 @@
                     {{- foods.food_description -}}
                 </textarea>
                 <label for="food_description">Food Description</label>
+            </div>
+        </div>
+        <!-- food description -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <textarea id="cooking_level" name="cooking_level" minlength="5" maxlength="200"
+                    class="materialize-textarea validate" required>
+                    {{- foods.cooking_level -}}
+                </textarea>
+                <label for="cooking_level">Cooking level</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5" maxlength="200"
+                    class="materialize-textarea validate" required>
+                    {{- foods.recipe_ingredients -}}
+                </textarea>
+                <label for="recipe_ingredients">Ingredients</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <textarea id="recipe_method" name="recipe_method" minlength="5" maxlength="200"
+                    class="materialize-textarea validate" required>
+                    {{- foods.recipe_method -}}
+                </textarea>
+                <label for="recipe_method">Method</label>
             </div>
         </div>
 

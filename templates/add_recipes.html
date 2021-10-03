@@ -27,10 +27,46 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
+                <i class="fas fa-folder-open prefix red-text text-darken-4"></i>
+                <select id="cooking_level" name="cooking_level" class="validate" required>
+                    <option value="" disabled selected>cooking level</option>
+                    {% for foods in foods %}
+                    <option value="{{ foods.cooking_level }}">{{ foods.cooking_level }}</option>
+                    {% endfor %}
+                </select>
+                <label for="cooking_level">cooking level</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
                 <i class="fas fa-align-left prefix red-text text-darken-4"></i>
                 <textarea id="food_description" name="food_description" minlength="5"
                     class="materialize-textarea validate" required></textarea>
                 <label for="food_description">Food Description</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <textarea id="food_img" name="food_img" minlength="5" class="materialize-textarea validate"
+                    required></textarea>
+                <label for="food_img"><a href="https://cloudinary.com">Upload image</a></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
+                    class="materialize-textarea validate" required></textarea>
+                <label for="recipe_ingredients">Ingredients/Ingredients></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                <textarea id="recipe_method" name="recipe_method" minlength="5" class="materialize-textarea validate"
+                    required></textarea>
+                <label for="recipe_method">Method</label>
             </div>
         </div>
         <!-- submit button -->

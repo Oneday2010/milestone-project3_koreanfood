@@ -112,7 +112,11 @@ def add_recipes():
             "category_name": request.form.get("category_name"),
             "food_name": request.form.get("food_name"),
             "food_description": request.form.get("food_description"),
-            "created_by": session["user"]
+            "created_by": session["user"],
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_method": request.form.get("recipe_method"),
+            "cooking_level": request.form.get("cooking_level"),
+            "food_img": request.form.get("food_img"),
         }
         mongo.db.foods.insert_one(foods)
         flash("Recipe Successfully Added")
@@ -129,7 +133,11 @@ def edit_recipes(foods_id):
             "category_name": request.form.get("category_name"),
             "food_name": request.form.get("food_name"),
             "food_description": request.form.get("food_description"),
-            "created_by": session["user"]
+            "created_by": session["user"],
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_method": request.form.get("recipe_method"),
+            "cooking_level": request.form.get("cooking_level"),
+            "food_img": request.form.get("food_img"),
         }
         mongo.db.foods.update({"_id": ObjectId(foods_id)}, submit)
         flash("Recipes Successfully Updated")
