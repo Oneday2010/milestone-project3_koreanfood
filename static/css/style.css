@@ -73,3 +73,8 @@ body {
     width: 50%;
     height: 50%;
 }
+
+.food_category_name {
+    color: #e53834;
+    font-weight: 400;
+}
