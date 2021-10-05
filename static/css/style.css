@@ -2,8 +2,7 @@
 
 :root {
     --fontFamily: 'Poppins', sans-serif;
-    --navbarBgColor: #362E24;
-    --bodyContainerColor: rgb(252, 243, 233);
+
 }
 
 
@@ -33,6 +32,7 @@ body {
 .brand-logo {
     margin-left: 70px;
 }
+
 .logoImg {
     width: 45px;
     height: 45px;
@@ -47,21 +47,17 @@ body {
 }
 
 .heading_color {
-    color: #8d0000;
+    color: #b71c1c;
+    font-weight: 400;
+    text-shadow: 0.5px 0.5px gray;
 }
 
-.flashes h4 {
-    line-height: 2;
-}
 
 .btn-small {
     margin: 5px;
 }
 
-.collapsible-header .col strong {
-    margin: 5px;
-    line-height: 42px;
-}
+
 
 .btn {
     color: #fff;
@@ -78,3 +74,8 @@ body {
     color: #e53834;
     font-weight: 400;
 }
+
+.profile_text {
+    font-size: 20px;
+}
+
