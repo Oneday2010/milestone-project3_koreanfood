@@ -1,9 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
 
+
+
+<!-- Modal Trigger -->
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="far fa-check-circle"></i> About this
+    site</a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4><strong>Welcome to K-Food recipes!!</strong></h4>
+        <p><strong>Hello!!</strong></p>
+        <p> Welcome to K-Food recipes site!! This website made for Korean food lovers living in worldwide.
+            Please share your Korean food recipes skills, photos, tips & tricks here. Hope you enjoy your time here!!
+            <i class="far fa-smile-beam"></i>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="fas fa-times-circle right"></i></a>
+    </div>
+</div>
+
 <h3 class="heading_color center-align">All recipes</h3>
-
-
 <div class="row card-panel grey lighten-5">
     <form action="{{ url_for('search') }}" method="post" class="col s12">
         <div class="row valign-wrapper center-align">

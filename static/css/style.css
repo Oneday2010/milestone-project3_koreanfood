@@ -47,9 +47,9 @@ body {
 }
 
 .heading_color {
-    color: #b71c1c;
+    color: #e53834;
     font-weight: 400;
-    text-shadow: 0.5px 0.5px gray;
+    text-shadow: 0.5px 0.5px rgb(199, 199, 199);
 }
 
 
@@ -79,3 +79,7 @@ body {
     font-size: 20px;
 }
 
+.flask_message {
+    margin: auto;
+    padding: 10px;
+}
