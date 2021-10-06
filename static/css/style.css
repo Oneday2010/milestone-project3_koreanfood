@@ -83,3 +83,7 @@ body {
     margin: auto;
     padding: 10px;
 }
+
+.meg-style {
+    text-transform: capitalize;
+}
