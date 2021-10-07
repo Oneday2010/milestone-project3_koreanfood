@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="red-text text-darken-4 center-align">Add Recipes</h3>
+<h3 class="red-text text-darken-4 center-align heading_color">Add Recipes</h3>
 
 <div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="{{ url_for('add_recipes') }}">
+        <!-- category selection -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix red-text text-darken-4"></i>
@@ -17,6 +18,7 @@
                 <label for="category_name">Food Category</label>
             </div>
         </div>
+        <!-- food name -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-utensils prefix red-text text-darken-4"></i>
@@ -25,14 +27,16 @@
                 <label for="food_name">Food Name</label>
             </div>
         </div>
+        <!-- cooking level -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-pepper-hot prefix red-text text-darken-4"></i>
                 <input id="cooking_level" name="cooking_level" minlength="3" maxlength="50" type="text" class="validate"
                     required>
-                <label for="cooking_level">Easy? More effort? or A challange</label>
+                <label for="cooking_level">Easy/Effort/Challange</label>
             </div>
         </div>
+        <!-- food description -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix red-text text-darken-4"></i>
@@ -41,6 +45,7 @@
                 <label for="food_description">Food Description</label>
             </div>
         </div>
+        <!-- food img -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="far fa-image prefix red-text text-darken-4"></i>
@@ -48,14 +53,16 @@
                 <label for="food_img"><a href="https://cloudinary.com">Type a URL to upload image</a></label>
             </div>
         </div>
+        <!-- Ingredients -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-carrot prefix red-text text-darken-4"></i>
                 <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
                     class="materialize-textarea validate" required></textarea>
-                <label for="recipe_ingredients">Ingredients/Ingredients></label>
+                <label for="recipe_ingredients">Ingredients</label>
             </div>
         </div>
+        <!-- Method-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-flask prefix red-text text-darken-4"></i>
@@ -78,4 +85,3 @@
 </div>
 
 {% endblock %}
-©

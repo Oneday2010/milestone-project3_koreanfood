@@ -23,7 +23,7 @@
             <div class="nav-wrapper">
 
                 <a href="{{ url_for('get_foods') }}" class="brand-logo">K-Food recipes</a>
-                <img src="{{ url_for('static', filename='images/k_food_logo.png') }}"  class="logoImg" alt="logo image">
+                <img src="{{ url_for('static', filename='images/k_food_logo.png') }}" class="logoImg" alt="logo image">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('get_foods') }}">Home</a></li>
@@ -47,18 +47,18 @@
         <!-- mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
             <li>
-                <h4 class="center-align red-text text-darken 4">Korean food recipes</h4>
+                <h4 class="center-align red-text text-darken 4">K-Food recipes</h4>
             </li>
-            <li><a href="{{ url_for('get_foods') }}">Home</a></li>
+            <li><a href="{{ url_for('get_foods') }}" class="waves-effect waves-light btn-large  red lighten-1">Home</a></li>
             {% if session.user %}
-            <li><a href="{{ url_for('add_recipes') }}">New Recipies</a></li>
-            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+            <li><a href="{{ url_for('add_recipes') }}" class="waves-effect waves-light btn-large  red lighten-1">New Recipies</a></li>
+            <li><a href="{{ url_for('profile', username=session['user']) }}" class="waves-effect waves-light btn-large red lighten-1">Profile</a></li>
+            <li><a href="{{ url_for('logout') }}" class="waves-effect waves-light btn-large  red lighten-1">Log Out</a></li>
             {% else %}
-            <li><a href="{{ url_for('login') }}">Log In</a></li>
-            <li><a href="{{ url_for('register') }}">Register</a></li>
+            <li><a href="{{ url_for('login') }}" class="waves-effect waves-light btn-large  red lighten-1">Log In</a></li>
+            <li><a href="{{ url_for('register') }}" class="waves-effect waves-light btn-large  red lighten-1">Register</a></li>
             {% endif %}
-            <li><a href="{{ url_for('get_foods') }}"><i class="fas fa-search-plus"></i></a></li>
+            <li><a href="{{ url_for('get_foods') }}" class="waves-effect waves-light btn-large  red lighten-1">Search</i></a></li>
 
         </ul>
     </header>

@@ -1,10 +1,11 @@
 /*
+reference to codeinstitute mini project: https://github.com/Code-Institute-Solutions/TaskManagerAuth/blob/main/08-SearchingWithinTheDatabase/01-text_index_searching/static/js/script.js
     jQuery for MaterializeCSS initialization
 */
 
 $(document).ready(function () {
     $(".sidenav").sidenav({
-        edge: "right"
+        edge: "left"
     });
     $(".tooltipped").tooltip();
     $("select").formSelect();

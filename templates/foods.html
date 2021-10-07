@@ -10,7 +10,7 @@
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
     <div class="modal-content">
-        <h4><strong>Welcome to K-Food recipes!!</strong></h4>
+        <h4 class="modal_heading"><strong>Welcome to K-Food recipes!!</strong></h4>
         <p><strong>Hello!!</strong></p>
         <p> Welcome to K-Food recipes site!! This website made for Korean food lovers living in worldwide.
             Please share your Korean food recipes skills, photos, tips & tricks here. Hope you enjoy your time here!!
@@ -23,19 +23,19 @@
 </div>
 
 <h3 class="heading_color center-align ">All recipes</h3>
-<div class="row card-panel grey lighten-5">
-    <form action="{{ url_for('search') }}" method="post" class="col s12">
-        <div class="row valign-wrapper center-align">
+<div class="row card-panel grey lighten-5 search_form">
+    <form action="{{ url_for('search') }}" method="post" class="col s12 ">
+        <div class="row valign-wrapper center-align search_container">
             <div class="input-field col s12 m8">
-                <i class="fas fa-search prefix red-text text-darken-4"></i>
+                <i class="fas fa-search prefix red-text text-darken-4 search-btn-i"></i>
                 <input type="text" name="query" id="query" minlength="3" class="validate" required>
                 <label for="query">Search Food</label>
             </div>
-            <div class="col s12 m4">
-                <button type="submit" class="red darken-1 btn text-shadow">
-                    <i class="fas fa-search left"></i> Search
+            <div class="col s6 m6">
+                <button type="submit" class="red darken-1 btn text-shadow btn_search ">
+                    Search
                 </button>
-                <a href="{{ url_for('get_foods') }}" class="red btn text-shadow">Reset</a>
+                <a href="{{ url_for('get_foods') }}" class="red btn text-shadow btn_search">Reset</a>
 
             </div>
         </div>
@@ -85,11 +85,20 @@
 
     </div>
     {% endfor %}
+
+
 </div>
 
 
 {% else %}
 <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
 {% endif %}
+
+<ul class="pagination center-align">
+    <li class="disabled"><a href="{{ url_for('get_foods') }}"><i class="fas fa-chevron-left"></i></a></li>
+    <li class="active"><a href="{{ url_for('get_foods') }}">1</a></li>
+
+    <li class="waves-effect"><a href="{{ url_for('get_foods') }}"><i class="fas fa-chevron-right"></i></a></li>
+</ul>
 
 {% endblock %}
