@@ -441,42 +441,37 @@
 ---
 * ### Content
 
-    1) Most of the contents from my original [cafe blog](https://mindfulmapping.wordpress.com/)
+    1) Many python code got inspired from  [codeinstitute_miniproject_task manager app ](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/0d4e3419132440d9b2c0943f80dc54a8/)
 
-    2) For the carousel I got huge help from [bootstrap](https://getbootstrap.com/docs/4.0/components/carousel/)
+    2) Primary front-end framework from [materialize](https://materializecss.com/)
 
-    3) for the map and email javascript code got help from [codeinstitute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/) / 
-    [codeinstitute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/)
+    3) Korean food recipe and containes[BBCGOODFOOD]((https://www.bbcgoodfood.com/)/[maangchi](https://www.maangchi.com/)
     
-    4) For Find the cafe questions form got help from [rudgerga](https://github.com/rudberga/CI-MS2-inspiry-tokyo) / [codepen](https://codepen.io/Ayn_/pen/vmVKZV)
+    4) Grammar and spelling checked from [Grammarly](www.grammarly.com/)
     
-    5) For Coffee quiz form got help from [Youtube](https://youtu.be/49pYIMygIcU) / [Code Explained](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html)
-    
-    6) most of the card's effect got the idea from [codepen](https://codepen.io/kw7oe/pen/mPeepv)
-    
-    7) coffee quiz questions got the idea from [BuzzFeed](https://www.buzzfeed.com/jasminsuknanan/coffee-knowledge-quiz) and [welovequizzes](https://www.welovequizzes.com/coffee-quiz-questions-and-answers/)
-
-    8) Grammar and spelling checked from [Grammarly](www.grammarly.com/)
 
 
 * ### Media
 
-  most of the cafe images originate from me. and there are images I used I referenced below (Pixabay)
+  most of images I used I referenced below (Pixabay) and else below
 
-    1) [coffeeContact](https://pixabay.com/illustrations/coffee-cafe-cup-kitchen-restaurant-3179847/)
-    2) logo created by myself I used this tool [logo](https://www.canva.com/design/DACVY478Beo/pnXH0TrN-rfMASjJTTaN2A/edit)
-    3) [cafeimages-cafe](https://pixabay.com/photos/cafe-restaurant-bar-people-tables-768771/)
-    4) [coffeehouse](https://pixabay.com/photos/coffeehouse-bar-shop-cafe-espresso-2600877/)
-    5) [holdingcoffee](https://pixabay.com/photos/hands-coffee-hold-holding-1283917/)
-    6) [pourover](https://pixabay.com/photos/coffee-brew-caffeine-coffee-making-984328/)
-    7) [coffeequiz-americano,latte,capuccino...](https://pixabay.com/illustrations/coffee-varieties-vector-4996650/)
-    8) [coffeeface](https://pixabay.com/illustrations/coffee-cup-mug-routine-2896942/)
-    9) [breakfast](https://pixabay.com/photos/breakfast-food-dish-1246686/)
-    10) [coffeecake](https://pixabay.com/photos/coffee-cup-beverage-cappuccino-2439999/)
-    11) [cafewithchair](https://pixabay.com/illustrations/outdoor-table-and-chairs-4290642/)
-    12) [manysits](https://pixabay.com/photos/people-restaurant-coffee-shop-2591838/)
-
-
+    1) logo created by myself I used this tool [logo](https://www.canva.com/)
+    2) [Bibimbap](https://pixabay.com/photos/food-photography-korean-bibimbap-2610863/)
+    3) [Korean fied chicken](https://pixabay.com/photos/chicken-korean-dish-food-fry-521097/)
+    4) [Fried rice](https://pixabay.com/photos/kimchi-fried-rice-fried-rice-rice-241051/)
+    5) [Kimchi](https://pixabay.com/photos/kimchi-korean-food-food-korea-4361465/)
+    6) [sonpun](https://pixabay.com/photos/wind-pant-tteok-rice-cake-masu-4869955/)
+    7) [Yakgwa](https://pixabay.com/photos/korean-traditional-sweets-drug-and-2150895/)
+    8) [Teokbokki](https://pixabay.com/photos/tteokbokki-food-korean-food-1607479/)
+    9) [bulgogi](https://pixabay.com/photos/ttukbaegi-bul-gogi-ttukbaegi-bulgogi-2517765/)
+    10) [bbq wing](https://pixabay.com/photos/ttukbaegi-bul-gogi-ttukbaegi-bulgogi-2517765/)
+    11) [spinach_side](https://pixabay.com/photos/spinach-side-dish-vegetable-552505/)
+    12) [Jap Chae noodles](https://pixabay.com/photos/japchae-asian-food-vegetables-house-876506/ )
+    13) [Porkmeat fired](https://pixabay.com/photos/pork-meat-fried-korean-food-dinner-1582916/)
+    14) [Stir-fried oyster mushrooms](https://pixabay.com/photos/food-cooking-mushrooms-4564419/)
+    15) [hotdog](https://pixabay.com/photos/food-snack-street-food-korean-food-4701098/)
+    16) [Hotteok](https://pixabay.com/photos/street-food-food-dish-snack-meal-6226730/)
+    17) [kimbop](https://pixabay.com/photos/food-photography-korean-kimbab-2610864/)
 
 * ### Acknowledgements
 
@@ -484,6 +479,6 @@
 
     1) [Code institute](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopment)
 
-    2) I got great help from elerel's [readme reference](https://github.com/elerel/ms1-go2snow/blob/master/README.md#overview)
+    2) I got great help from elerel's [readme reference](https://github.com/elerel/ms1-go2snow/blob/master/README.md#overview) and pramcistudent'[readme reference](https://github.com/pramcistudent/cookbook-project3/blob/master/README.md#local-deployment)
 
     3) My mentor Nishant Kumar's support gives me great help and Thanks to my tutors. 
