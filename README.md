@@ -4,6 +4,7 @@
 
 [View the live project here](https://korean-food-recipes.herokuapp.com/) 
 
+This website is mainly create for user who interest about Korean food recipes. Moreover, user can register the website to be able to add new recipe, edit and delete the content too. The main aim of the project is create a user-friendly website can help user to interact with contents and search the information easily about Korean food recipe. User can also interact with other user as user name can be shown on the bottom of content. 
 
 
 
@@ -35,12 +36,12 @@
 
 ## Overview
 ---
-
+There are many websites offers food recipe. Many websites also offer Korean food recipes. However, there not many website users can upload their skill and recipe/tips. Most food recipe websites rely on the owner's data update or users comment section. I want to create a website that can be simple and easy to share users own recipe date.  
 
 
 ## Description
 ---
-
+It is a Korean food recipes contents sharing website that is intended to be accessible on all devices. My aim in this project was to make the website more interactive. Therefore users can share their own recipes and skill with other users by posting their content. Also, try to make a simple layout to increase a positive user experience.
 
 ![overoll site images](static/images/site_img.png)
 
@@ -54,28 +55,39 @@
 ### Strategy
 ---
 
- Main target user : 
-
+ Main target user : Korean food lovers in worldwide/visiter
+This website is aimed to engage each user by sharing their own Korean food recipe. the contents can be added, edit and delete and Creator only can create/edit/delete the contents. To be able to do that users need to register and log in with their id and password. Therefore site can be more secure and manageable by user information which will automatically collect on mongoDB database. 
 
 
 ####  Business Goals
 
- 1. 
- 2. 
+ 1. To gain an increase in website user interactive
 
- 3. 
+ 2. To provide a professional, clear and easy navigate website for any type of user, be it, first time user, as well
 
- 4. 
+ 3. Offer users the function to share their content and post on this site to interact with other users. 
+
+ 4. User's data and traffic increment can be used further in business models such as Korean food marketing or tools. 
 
 #### User Stories
 
    * As first time user
 
-      
+    " I'm just looking for an easy way to cook simple Korean food, I don't want to register"
+
+    " I don't want to search too many Korean food recipes. I'm just looking for Korean dessert"
+    
+    " I got my own Korean food recipe, I love to share with others"
+
+        
 
   * As Regular User:
 
-    
+    "I want to change my recipe, I find a better way to cook"
+
+    " I don't want others can edit my contents"
+
+    " I don't interest any other contents apart from Korean food recipe, want to simply share my share mine and learn from others. wish I could leave the comment though"
 
 ### Scope
 ---
