@@ -159,24 +159,27 @@ The website shows two different ways. the non-registered user used the site and 
 ### Surface
 —--
 
+I wanted to have a bright and energetic concept on my site. There are common concepts about Korean food is very spicy. So I chose the main colour as red and I give different light dept of red colour. Most of the colour tones got inspired by Materialize color palette [Materialize color palette](https://materializecss.com/color.html) Check [colorspace]((https://mycolor.space/?hex=%23352E24&sub=1)) for colour match. logo image work on myself to match the colour tone with the website. Most of the containers and images got border shadows to look more 3D visual effect.
+
 
 
  #### Design
 
-   - Images :
+   - Images :Each food image is selected from the Korean food photo section mainly from [pixabay](https://pixabay.com/). All the photos and recipes are matched with each other and I want to make sure to choose more variety Korean food categories such as the main dish, side dish and dessert. 
 
 
-  - Color Scheme : 
+  - Color Scheme :  mainly use red to symbolise the spicy Koran food concept. Try to change the red color light with a button . Only edit and delete button use green and blue to easily recognise. 
+ 
 
  ![Materialize](static/images/color_palette.png)
-    -- 
+    
 
 
 
-  - Typography : Typography : I used Google Fonts to get some idea of my website fonts and decided to use “ ‘Poppins” and “Sans-serif” as the backup font. I choose Poppins because it looks more followed trend as modern and minimalism at the same time it looks friendly and reliable.
+  - Typography : I used Google Fonts to get some idea of my website fonts and decided to use “ ‘Poppins” and “Sans-serif” as the backup font. I choose Poppins because it looks more followed trend as modern and minimalism at the same time it looks friendly and reliable.
 
 
-  - Icons :Icons : Font Awesome was my choice to use all icons on my website. I used mainly footer social icon, top3 page heading icons. Try to use icons that easy to understand the purpose of usage.
+  - Icons : Font Awesome was my choice to use all icons on my website. Try to use icons that easy to understand the purpose of usage. 
 
 
 
@@ -186,81 +189,51 @@ The website shows two different ways. the non-registered user used the site and 
 
 ### Navbar
 
- -  
+ - There is a navbar fixed on the top of all the web pages to give the user better access and navigate the website easily. 
 
- - 
+ - logo image and logo title linked to home and on a mobile or tablet, the navbar is then collapsed to show the hamburger icon which expands as a left sidebar. 
 
- - 
+ - when the user login the account, new pages(new recipe and profile) add from the basic navbar. 
 
 ### Home
 
- - 
+ - Top of Home has about modal button to introduce the website
 
- - 
- - 
+ - Search too on the top of all the recipes can search by text
+ - food image with recipes contents with Card reveals function. So the user clicks the food title it will reveal more information. there is a close function included. Also, Delate and Edit button include in case the creator want to edit the contents. 
 
- - 
-### Login
-
- - 
-### Logout
-
- - 
-
-### New Recipes
-
- - 
-
-### Profile
-
- - 
-
-### Register
-
- - 
-
-## Existing Features
----
-
-
-
-### HOME
-
-
-
+ - pagination function is bottom of the page to make sure the user can aware that how long the contents it is. It could be spited up in future. 
 
 ### Login
 
-
-
+ - simple login function page with a user name and password input form.  Under the form, the link suggested to the register page to lead the user to register to the site. User name and password min 5 to max 15words. required and correctly labelled.
 
 ### Logout
 
-
+ - when the user logout the page it is automatically link to login page
 
 ### New Recipes
 
- 
-
+ - the form included food category/food name/cooking level/food description/food image/ingredients/method. The user can add a new recipe to this page and all the sections are required to update data
 
 ### Profile
 
- 
+ - the profile page is automatically linked to login information. So, registered user login the site, profile page open with right user information and it also has a button with home page linked. 
 
 ### Register
 
-
+ -  simple register function page with a user name and password input form.  Under the form, the link suggested to the login page to lead the user who already register to the site. User name and password min 5 to max 15words. required and correctly labelled.
 
 
 
 ## Features left to implement
 ---
 
- - 
+ -  The user comment section can be useful. It will increase interaction between users. 
 
- - 
+ -  Social media links can be added in future such as facebook page or instagram. It will also be a nice tool to collect information and engagement between users. 
 
- - 
+ - Would be nice add page about Korean food cooking tools and other section related Korea food culture.  
 
  
 
@@ -285,7 +258,7 @@ The website shows two different ways. the non-registered user used the site and 
 
 5) [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframe during the design process.
 
-6) [JQuery](https://jquery.com/) - used javascript fuctions)
+6) [JQuery](https://jquery.com/) - used javascript fuctions.
 
 
 7) [flask](https://flask.palletsprojects.com/en/2.0.x/) - The project uses Flask, which is a Python microframework.
@@ -301,7 +274,7 @@ The website shows two different ways. the non-registered user used the site and 
   - [Gitpod](https://gitpod.io/workspaces) - Used as the primary version control IDE for developers to further push and commit code to Github.
 
 ### Hosting
-  - [Heroku](https://www.heroku.com/)b - I've used Heroku as the hosting platform to deploy my app.
+  - [Heroku](https://www.heroku.com/) - I've used Heroku as the hosting platform to deploy my app.
 
 ### Other
 
@@ -446,18 +419,24 @@ The website shows two different ways. the non-registered user used the site and 
       
       I got three collections ( categories,foods,users). each collection can be add extra document and each document got an unique id. 
 
-  categories ![categories](static/images/mongoDB/categories_mongoDB.png)
+  categories 
+  
+  ![categories](static/images/mongoDB/categories_mongoDB.png)
 
-  foods ![foods](static/images/mongoDB/foods_mongoDB.png)
+  foods 
+  
+  ![foods](static/images/mongoDB/foods_mongoDB.png)
 
-  users ![users](static/images/mongoDB/users_mongoDB.png)
+  users 
+  
+  ![users](static/images/mongoDB/users_mongoDB.png)
         
 
-    3)  You should now be able to run the app locally using the python3 app.py command.
+    2)  You should now be able to run the app locally using the python3 app.py command.
 
-    4) The app should now be running on localhost on an address similar to http://127.0.0.1:5000. Simply copy/paste this into the browser of your choice!
+    3) The app should now be running on localhost on an address similar to http://127.0.0.1:5000. Simply copy/paste this into the browser of your choice!
 
-    5) there is some sensitive data which we need to be hide in file "env.py" and it is able to hide file ".gitignore" there for you can secure your confidential data. you need to setup a secret key, which is required whenever using the flash() and session() functions of Flask from MongoDB. 
+    4) there is some sensitive data which we need to be hide in file "env.py" and it is able to hide file ".gitignore" there for you can secure your confidential data. you need to setup a secret key, which is required whenever using the flash() and session() functions of Flask from MongoDB. 
 
 
 ### Remote Deployment  
@@ -466,10 +445,12 @@ The website shows two different ways. the non-registered user used the site and 
 
   1) Create a requirements.txt file so Heroku can install the required dependencies to run the app.
   "pip3 freeze --local > requirements.txt".
+
   2) Create a Procfile to tell Heroku what type of application is being deployed, and how to run it.
     echo web: python app.py > Procfile
 
   3) Sign up for a free Heroku account, create your project app, and click the Deploy tab, at which point you can Connect GitHub as the Deployment Method, and select Enable Automatic Deployment.
+  
   4) In the Heroku Settings tab, click on the Reveal Config Vars button to configure environmental variables as follows:
   IP : 0.0.0.0
   PORT : 5000
