@@ -260,9 +260,9 @@
 
 ### Frameworks,Libraries & Service sites
 
-1) [materialize](https://materializecss.com/) -
+1) [materialize](https://materializecss.com/) - Primary front-end framework
 
-2) [mongoDB](https://www.mongodb.com/) - 
+2) [mongoDB](https://www.mongodb.com/) - MongoDB is a document-based database. It used manage to database connect with my gitpot repository.
 
 3) [Google Fonts](https://fonts.google.com/specimen/Oswald?preview.text_type=custom) - Google fonts use for most headlines and paragraphs. 
 
@@ -420,21 +420,49 @@
 
 ## Deployment
 ---
+
+ ### Local Deployment
     1) in order to run this project locally on your own system, you will need the following installed:
 
       - Python3 to run the application.
       - PIP to install all app requirements.
-      - GIT for cloning and version control.
-      - MongoDB to develop your own database either locally or remotely on MongoDB Atlas. Next, there's a series of steps to take in order to proceed with local deployment:
+      - MongoDB to develop your own database either locally or remotely on MongoDB Atlas. There's a series of steps to take in order to proceed with local deployment:
+      Make sure you got your database access (Username and URL as well as password)in MongoDB. when all got set, you need to connect with the Mongo DB Shell and your gitpod repository. CRUD(create, read, update, and delete) need to be work through the step.
+      
+      I got three collections ( categories,foods,users). each collection can be add extra document and each document got an unique id. 
 
-    2)  
+  categories ![categories](static/images/mongoDB/categories_mongoDB.png)
 
-    3)  
+  foods ![foods](static/images/mongoDB/foods_mongoDB.png)
 
-    4) 
+  users ![users](static/images/mongoDB/users_mongoDB.png)
+        
 
-    5) 
+    3)  You should now be able to run the app locally using the python3 app.py command.
 
+    4) The app should now be running on localhost on an address similar to http://127.0.0.1:5000. Simply copy/paste this into the browser of your choice!
+
+    5) there is some sensitive data which we need to be hide in file "env.py" and it is able to hide file ".gitignore" there for you can secure your confidential data. you need to setup a secret key, which is required whenever using the flash() and session() functions of Flask from MongoDB. 
+
+
+### Remote Deployment  
+
+  This site is currently deployed on Heroku using the main branch on GitHub. To implement this project on Heroku, the following steps were taken:
+
+  1) Create a requirements.txt file so Heroku can install the required dependencies to run the app.
+  "pip3 freeze --local > requirements.txt".
+  2) Create a Procfile to tell Heroku what type of application is being deployed, and how to run it.
+    echo web: python app.py > Procfile
+
+  3) Sign up for a free Heroku account, create your project app, and click the Deploy tab, at which point you can Connect GitHub as the Deployment Method, and select Enable Automatic Deployment.
+  4) In the Heroku Settings tab, click on the Reveal Config Vars button to configure environmental variables as follows:
+  IP : 0.0.0.0
+  PORT : 5000
+  MONGO_URI : <link to your Mongo DB>
+  SECRET_KEY : <your own secret key>
+
+  Back to diploy section and try diploy your app.
+  Your app should be successfully deployed to Heroku at this point.
 
 
 ## Credits
@@ -445,7 +473,7 @@
 
     2) Primary front-end framework from [materialize](https://materializecss.com/)
 
-    3) Korean food recipe and containes[BBCGOODFOOD]((https://www.bbcgoodfood.com/)/[maangchi](https://www.maangchi.com/)
+    3) Korean food recipe and containes[BBCGOODFOOD](https://www.bbcgoodfood.com/)/[maangchi](https://www.maangchi.com/)
     
     4) Grammar and spelling checked from [Grammarly](www.grammarly.com/)
     
