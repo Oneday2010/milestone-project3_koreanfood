@@ -23,13 +23,14 @@ mongo = PyMongo(app)
 def get_foods():
     foods = list(mongo.db.foods.find())
     return render_template("foods.html", foods=foods)
-    
+
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     foods = list(mongo.db.foods.find({"$text": {"$search": query}}))
-    return render_template("foods.html", foods=foods)   
+    return render_template("foods.html", foods=foods)  
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -153,12 +154,11 @@ def delete_recipes(foods_id):
     flash("Recipes Successfully Deleted")
     return redirect(url_for("get_foods"))
 
+
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
-
-
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

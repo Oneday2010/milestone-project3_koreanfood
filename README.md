@@ -42,7 +42,7 @@
 ---
 
 
-![overoll site images](assets/docs/images/siteimg.png)
+![overoll site images](static/images/site_img.png)
 
 
 
@@ -54,7 +54,7 @@
 ### Strategy
 ---
 
- Main target user : cafe searcher/business owner/tourist/visiter
+ Main target user : 
 
 
 
@@ -119,35 +119,26 @@
 
  - Landing Page: welcoming page
  
-![HOME](assets/docs/images/wireframe/wireframe-home.png)
+![HOME](static/images/wireframe/home_wireframe.png)
 
- - Coffeequiz
+ - login
 
-![COFFEEQUIZ](assets/docs/images/wireframe/wireframe-coffeequiz.png)
+![login](static/images/wireframe/login_wireframe.png)
 
- - Question ( to search and get result)
+ - 
 
-![QUESTION](assets/docs/images/wireframe/wireframe-question.png)
+![register](static/images/wireframe/register_wireframe.png)
 
- - Dublin2 cafes
+ - 
  
-![DUBLIN2](assets/docs/images/wireframe/wireframe-dublin2.png)
+![profile](static/images/wireframe/profile_wireframe.png)
 
- - Dublin6 cafes
+ - 
 
-![DUBLIN6](assets/docs/images/wireframe/wireframe-dublin6.png)
+![newrecipe](static/images/wireframe/newrecipe_wireframe.png)
 
- - Dublin8 cafes
+ - 
 
-![DUBLIN8](assets/docs/images/wireframe/wireframe-dublin8.png)
-
- - Top3 page
-
-![TOP3](assets/docs/images/wireframe/wireframe-top3.png)
-
- - Contact
- 
-![CONTACT](assets/docs/images/wireframe/wireframe-contact.png)
 
 
 ### Surface
@@ -162,18 +153,15 @@
 
   - Color Scheme : 
 
- ![adobe color](assets/docs/images/adobecolor.png)
-    -- adobe color
-
- ![color space](assets/docs/images/colorspace.png)
+ ![Materialize](static/images/color_palette.png)
+    -- 
 
 
 
+  - Typography : Typography : I used Google Fonts to get some idea of my website fonts and decided to use “ ‘Poppins” and “Sans-serif” as the backup font. I choose Poppins because it looks more followed trend as modern and minimalism at the same time it looks friendly and reliable.
 
-  - Typography : 
 
-
-  - Icons : 
+  - Icons :Icons : Font Awesome was my choice to use all icons on my website. I used mainly footer social icon, top3 page heading icons. Try to use icons that easy to understand the purpose of usage.
 
 
 
@@ -268,13 +256,13 @@
 
 ### Languages Used
 
-## HTML5, CSS3, JAVASCRIPT
+## HTML5, CSS3, JAVASCRIPT,Python+Flask,MongoDB
 
 ### Frameworks,Libraries & Service sites
 
-1) [bootstrap4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/) -Bootstrap was used to assist with the responsiveness and styling of the website
+1) [materialize](https://materializecss.com/) -
 
-2) [Hover.css](https://cdnjs.com/libraries/hover.css/2.1.1) - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over. 
+2) [mongoDB](https://www.mongodb.com/) - 
 
 3) [Google Fonts](https://fonts.google.com/specimen/Oswald?preview.text_type=custom) - Google fonts use for most headlines and paragraphs. 
 
@@ -285,12 +273,20 @@
 6) [JQuery](https://jquery.com/) - used javascript fuctions)
 
 
+7) [flask](https://flask.palletsprojects.com/en/2.0.x/) - The project uses Flask, which is a Python microframework.
+
+8) [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - The project uses Jinja for templating with Flask in the HTML code. I used Jinja to simplify my HTML code, avoid repetition, and allow simpler linking of the back-end to the front-end.
+
+9) PyMongo - The project uses PyMongo as the Python API for MongoDB. This API enables linking the data from the back-end database to the front-end app.
 
 ### Version control
 
   - [Github](https://github.com/) - Used to store the code and use of Github Pages to deploy the website.
 
   - [Gitpod](https://gitpod.io/workspaces) - Used as the primary version control IDE for developers to further push and commit code to Github.
+
+### Hosting
+  - [Heroku](https://www.heroku.com/)b - I've used Heroku as the hosting platform to deploy my app.
 
 ### Other
 
@@ -300,11 +296,10 @@
  - [AmIResponsive](http://ami.responsivedesign.is/) - Used to check how the layout of the website looks across different devices.
  - [responsinator](http://www.responsinator.com/?url=https://oneday2010.github.io/milestone-project2/) - Used to test website layout on multiple devices
  - [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) - Used to test all pages on a mobile device
- - [Adobe color](https://color.adobe.com/search?q=coffee) - Used to find right color pattern for my website
  - [Colorspace](https://mycolor.space/?hex=%23352E24&sub=1) - Used to find right color pattern for my website
  - [Youtube](https://www.youtube.com/) - Used to got javascript and css tip
  - [TinyJPG](https://tinyjpg.com/) - to compress image to better loading speed 
- - [Codepen site](https://codepen.io/) - Used to get tip for question and quiz form 
+ 
 
 
 ## Testing 
@@ -321,10 +316,17 @@
 
 2. 
 
- ![form test - newsletter](assets/docs/images/form-test/formTest-newletter.png)
- ![form test - contact](assets/docs/images/form-test/formTest-contact.png)
- ![form test - newsletter email](assets/docs/images/form-test/formTest-newsletter-email.png)
- ![form test - contact email](assets/docs/images/form-test/formTest-contact-email.png)
+ ![form test - login](static/images/form_test/login.png)
+
+ ![form test - register](static/images/form_test/register.png)
+
+ ![form test - logout](static/images/form_test/logout.png)
+
+ ![form test - add recipe](static/images/form_test/add.png)
+
+ ![form test - edit recipe](static/images/form_test/edit.png)
+
+ ![form test - delete recipe](static/images/form_test/delete.png)
  
 
 3. 
@@ -335,12 +337,12 @@
 
 4. 
 
- [this link](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html)
+ 
 
  - Links : 
- Testing across various devices ( I used [responsinator](http://www.responsinator.com/?url=https://oneday2010.github.io/milestone-project2/) as well as my one device and friends. the devices blow works without issue
+ Testing across various devices ( I used [responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fkorean-food-recipes.herokuapp.com%2F) as well as my one device and friends. the devices blow works without issue
 
- - Mobiles/tablet/laptop
+ - Mobiles/tablet/laptop()
    * iPhone eXpensive portrait · width: 375px                 
    *  Android (Pixel 2) portrait · width: 412px
    * Android (Pixel 2) landscape · width: 684px
@@ -354,41 +356,39 @@
 
  - Ensured the website was also responsive on all the pages [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly?utm_source=gws&utm_medium=onebox&utm_campaign=suit) 
 
-   - Home ![mobile friendly test - Home](assets/docs/images/form-test/mobileTest-home.png)
+   - Home ![mobile friendly test - Home](static/images/mobile_friendly_test/home_mobilefriendly.png)
 
-   - Dublin 2  ![mobile friendly test - Dublin2](assets/docs/images/form-test/mobileTest-dublin2.png)
+   - login ![mobile friendly test - Dublin2](static/images/mobile_friendly_test/login_mobilefriendly.png)
 
-   - Dublin 6 ![mobile friendly test - Dublin6](assets/docs/images/form-test/mobileTest-dublin6.png)
+   - register ![mobile friendly test - Dublin6](static/images/mobile_friendly_test/register_mobilefriendly.png)
 
-   - Dublin 8  ![mobile friendly test - Dublin8](assets/docs/images/form-test/mobileTest-dublin8.png)
+   - addrecipe  ![mobile friendly test - Dublin8](static/images/mobile_friendly_test/addrecipe_mobilefriendly.png)
 
-   - Top3  ![mobile friendly test - Top3](assets/docs/images/form-test/mobileTest-top3.png)
-
-   - Contact ![mobile friendly test - Contact](assets/docs/images/form-test/mobileTest-contact.png)
-
-   - Questions  ![mobile friendly test - Questions](assets/docs/images/form-test/mobileTest-questions.png)
-
-   - Coffeequiz ![mobile friendly test - Coffeequiz](assets/docs/images/form-test/mobileTest-coffeequiz.png)
- 
+   
   - I tested on Safari,Chrome, Firefox it was performed without issue. 
 
 
 
 
  #### Validation
- - [W3C Markup Validator](https://validator.w3.org/) : 
-
- All pages have no issue found. same comments such as  blows image with all the pages
-
- ![W3C Markup Validator](assets/docs/images/form-test/w3c-validator.png)
-
+ - [W3C Markup Validator](https://validator.w3.org/) : The W3C Validator tool doesn't recognise the Jinja templating, which has resulted in showing a lot of errors in relation to the Jinja code. However, all other code is validating fine.
 
 
  - [W3C CSS Vaildator](https://jigsaw.w3.org/css-validator/) 
 
   All pages have no issue found. same comments such as  blows image with all the pages
 
- ![W3C CSS Validator](assets/docs/images/form-test/css-validator.png)
+ ![W3C CSS Validator](static/images/css_validator.png)
+
+ - [Esprima Syntax Validator tool](https://esprima.org/demo/validate.html) 
+
+  All pages have no issue found.
+ ![Esprima Syntax Validator tool](static/images/javascript_validate.png)
+
+ - [Pep8 Online tool](http://pep8online.com/) 
+
+  
+ 
 
 
 
@@ -398,33 +398,13 @@
 
   - bug1
 
-![bug1](assets/docs/images/bug/bug1.png)
+![bug1](static/images/bugimg/bug1.png)
 
           T
 
 
-
-
   - bug2
   
-  ![bug2](assets/docs/images/bug/bug2.png)
-
-         T
-  - bug3 
-
-  ![bug3](assets/docs/images/bug/bug3.png)
-
-         O
-
-  - bug4
-
-  ![bug4](assets/docs/images/bug/bug4.png)
-
-          O
-
-  - bug5
-
-          A
 
  
   
@@ -440,15 +420,20 @@
 
 ## Deployment
 ---
-    1) Firstly I create the account part of my CSS course on code institute. After practising the mini-project, I could get the idea to use Gitpod as well as GitHub. I created a new repository to start my project and put the name  “milestone-project1”
+    1) in order to run this project locally on your own system, you will need the following installed:
 
-    2) After getting my repository for my project I start work all coding and update all my files on Gitpod. 
+      - Python3 to run the application.
+      - PIP to install all app requirements.
+      - GIT for cloning and version control.
+      - MongoDB to develop your own database either locally or remotely on MongoDB Atlas. Next, there's a series of steps to take in order to proceed with local deployment:
 
-    3) Gitpod, a cloud-based version control software or IDE was used to write all code for this project. 
+    2)  
 
-    4) Each day when I finished, I save the data and when all the work was done, I went to Github pages and check the setting menu and found the Github pages. I selected the Master Branch and it automatically creates a URL address. 
+    3)  
 
-    5) To access the code, I can get a clone that provides an URL and I can use my phone or any device, or download it as a zip file on the device. 
+    4) 
+
+    5) 
 
 
 
