@@ -92,37 +92,40 @@ This website is aimed to engage each user by sharing their own Korean food recip
 ### Scope
 ---
 
- - Useful - 
+ - Useful - This website is useful to a user who searches Korean food recipes and shares their own skills as well.
 
- - Sellable - 
+ - Sellable - There are many potential fundable possibilities such as a Korean food marketing research purpose and advertisement.
 
- - Buildable - 
+ - Buildable - Fits in with the level of my abilities, limited python usability and javascript function but it can improve in future.
 
- - Objective - 
+ - Objective - search for best suitable Koran food recipes and posting own skill with function. 
 
- - Functional - 
+ - Functional - user can log in/log out and register an account. After register the website, the user can update new recipes and edit, delete contents. 
 
- - Non-Functional  - 
+ - Non-Functional  -  limited contents engaging function. if the user can leave a comment on the other user's content would be better. Also, more documents for cooking time and portion size can be add in future. 
 
- - Business Rules - 
+ - Business Rules -  The Korean food recipe is very subjective and coming from an individual's experience. However, make sure the user doesn't share non-related information. Always develop the function to gain users' feedback.
 
 
 
- * Main target user : 
+ * Main target user : Koran food lovers/chef/food experts/ visiter
 
 
 
 
 ### Structure
 ---
-
+There are three pages for the non-registered user. 
+The home page/login/register. The home page come with introducing the website with modal function as "about this site". When the user clicks the button it is pop-out the introduction of the website. And it also contains a search bar and images with recipes. under the containers, there is pagination, so the user can be sure it is just one page. 
+login and register page leads the user can log in or register the site. 
+If the user is already registered and login with a username, there are two more pages that will be shown such as new recipe add and profile pages. The profile page will be automatically linked once the user logs in. and the user can add a new recipe and the edit/delete button also shows if the contents were created by the creator. 
 
 
 
 
 ### Skeleton
 ---
-
+The website shows two different ways. the non-registered user used the site and the registered user using the site. Most of the pages are match with my framework, but I didn't count on the sidebar which will show when users use a small device such as mobile phones or small tablets. I change the title from Korean food recipe to K-food recipe later and few small details have been changed after. 
 
  
  #### Wireframes
@@ -137,19 +140,19 @@ This website is aimed to engage each user by sharing their own Korean food recip
 
 ![login](static/images/wireframe/login_wireframe.png)
 
- - 
+ - Register
 
 ![register](static/images/wireframe/register_wireframe.png)
 
- - 
+ - profile
  
 ![profile](static/images/wireframe/profile_wireframe.png)
 
- - 
+ - newrecipe
 
 ![newrecipe](static/images/wireframe/newrecipe_wireframe.png)
 
- - 
+ 
 
 
 
