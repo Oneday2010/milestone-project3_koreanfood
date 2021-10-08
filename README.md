@@ -71,7 +71,7 @@ This website is aimed to engage each user by sharing their own Korean food recip
 
 #### User Stories
 
-   * As first time user
+  * As first time user
 
     " I'm just looking for an easy way to cook simple Korean food, I don't want to register"
 
@@ -168,10 +168,10 @@ I wanted to have a bright and energetic concept on my site. There are common con
    - Images :Each food image is selected from the Korean food photo section mainly from [pixabay](https://pixabay.com/). All the photos and recipes are matched with each other and I want to make sure to choose more variety Korean food categories such as the main dish, side dish and dessert. 
 
 
-  - Color Scheme :  mainly use red to symbolise the spicy Koran food concept. Try to change the red color light with a button . Only edit and delete button use green and blue to easily recognise. 
+  - Color Scheme :  mainly use red to symbolise the spicy Koran food concept. Try to change the red color light with a button .Only edit and delete button use green and blue to easily recognise. 
  
 
- ![Materialize](static/images/color_palette.png)
+   ![Materialize](static/images/color_palette.png)
     
 
 
@@ -200,6 +200,7 @@ I wanted to have a bright and energetic concept on my site. There are common con
  - Top of Home has about modal button to introduce the website
 
  - Search too on the top of all the recipes can search by text
+
  - food image with recipes contents with Card reveals function. So the user clicks the food title it will reveal more information. there is a close function included. Also, Delate and Edit button include in case the creator want to edit the contents. 
 
  - pagination function is bottom of the page to make sure the user can aware that how long the contents it is. It could be spited up in future. 
@@ -254,7 +255,7 @@ I wanted to have a bright and energetic concept on my site. There are common con
 
 3) [Google Fonts](https://fonts.google.com/specimen/Oswald?preview.text_type=custom) - Google fonts use for most headlines and paragraphs. 
 
-4) [Font Awesome](https://fontawesome.com/) - Use bootstrap4/font-awesome version. It used on all pages throughout the website to add icons 
+4) [Font Awesome](https://fontawesome.com/) - It used on all pages throughout the website to add icons 
 
 5) [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframe during the design process.
 
@@ -266,6 +267,8 @@ I wanted to have a bright and energetic concept on my site. There are common con
 8) [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - The project uses Jinja for templating with Flask in the HTML code. I used Jinja to simplify my HTML code, avoid repetition, and allow simpler linking of the back-end to the front-end.
 
 9) PyMongo - The project uses PyMongo as the Python API for MongoDB. This API enables linking the data from the back-end database to the front-end app.
+
+10) [cloudinary](https://cloudinary.com/) - used to upload media files and get the URL address. This URL address used to upload image on mongoDB/ app food image. 
 
 ### Version control
 
@@ -293,44 +296,68 @@ I wanted to have a bright and energetic concept on my site. There are common con
 ## Testing 
 ---
 
- - 
- 
+ - Forms testing
 
-
-1. 
-
-
+  * There are five test users registered in this site. 
     
+    - username : Amy21 - password : test2021 ( 9 recipes updated by this username)
+    - username : Admin - password : admintest ( 6 recips updated by this user name)
+    - username : Tester - password : test2021
+    - username : Mary21 - password : marytest
+    - username : Jim2020 - password : jimtest
 
-2. 
+-> login with Amy21 or Admin, site shows edit/delete button. 
 
- ![form test - login](static/images/form_test/login.png)
+There are six form tests images below. 
+
+1.  login 
+
+![form test - login](static/images/form_test/login.png)
+
+ - a user who already registers an account on this website can log in with an input username and password. If the username is less than five letters or more than 15letters, it shows a red underline and warning message with "please match the format requested". Same warning with a password. If password or username does not match with data, flask message pop up right corner of the website with a warning message. Moreover, after login, user's profile page will be open and with messege with username on it. 
+  
+
+2. register
 
  ![form test - register](static/images/form_test/register.png)
 
- ![form test - logout](static/images/form_test/logout.png)
+ - when a user tries to register an account, the user needs to input a username and password which letters between five to fifteen. If the requirement doesn't match, it will show a warning message.  After register  success, the user will be lead to the profile page and get the flask message with 'Registration Successful!"
+
+
+3. add recipe 
 
  ![form test - add recipe](static/images/form_test/add.png)
 
+ - After the user adds a new recipe on the new recipe page, the pop-up message shows with the user successfully add the recipe. and if the contents don't match with the requirement, it doesn't allow to add any data. 
+
+
+4. edit recipe
+
  ![form test - edit recipe](static/images/form_test/edit.png)
 
+ - There are clickable buttons under recipes if the contents are created by the user who login. Therefore creators can edit/delete the contents as they wish. if the user clicks the edit button, it will lead to original data filled in a form and the user can change. After changing the form, the user can click the edit recipes button or cancel. If click edit recipes it updates with new data and if click the cancel will lead to the home page.
+
+
+5. delate recipe
+
  ![form test - delete recipe](static/images/form_test/delete.png)
+
+ - if the user clicks the delete button, it will delete the food recipe, the user will see the pop-up message.
  
 
-3. 
+6. logout
+
+![form test - logout](static/images/form_test/logout.png)
+
+  - If the user clicks the logout on the navbar it will lead the user to the login page and the user will get a pop-up message.
 
 
+# Links : 
 
-
-
-4. 
-
- 
-
- - Links : 
  Testing across various devices ( I used [responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fkorean-food-recipes.herokuapp.com%2F) as well as my one device and friends. the devices blow works without issue
 
- - Mobiles/tablet/laptop()
+  -  Mobiles/tablet/laptop()
+
    * iPhone eXpensive portrait · width: 375px                 
    *  Android (Pixel 2) portrait · width: 412px
    * Android (Pixel 2) landscape · width: 684px
@@ -357,38 +384,36 @@ I wanted to have a bright and energetic concept on my site. There are common con
 
 
 
+#### Validation
 
- #### Validation
  - [W3C Markup Validator](https://validator.w3.org/) : The W3C Validator tool doesn't recognise the Jinja templating, which has resulted in showing a lot of errors in relation to the Jinja code. However, all other code is validating fine.
 
 
  - [W3C CSS Vaildator](https://jigsaw.w3.org/css-validator/) 
 
-  All pages have no issue found. same comments such as  blows image with all the pages
+    All pages have no issue found. same comments such as  blows image with all the pages
 
  ![W3C CSS Validator](static/images/css_validator.png)
 
  - [Esprima Syntax Validator tool](https://esprima.org/demo/validate.html) 
 
-  All pages have no issue found.
+    All pages have no issue found.
+
  ![Esprima Syntax Validator tool](static/images/javascript_validate.png)
 
  - [Pep8 Online tool](http://pep8online.com/) 
 
+    No issues found.
+
   
- 
 
-
-
-
-
-#### Project bug and solution
+ #### Project bug and solution
 
   - bug1
 
 ![bug1](static/images/bugimg/bug1.png)
 
-          T
+  
 
 
   - bug2
@@ -410,14 +435,17 @@ I wanted to have a bright and energetic concept on my site. There are common con
 ---
 
  ### Local Deployment
-    1) in order to run this project locally on your own system, you will need the following installed:
 
-      - Python3 to run the application.
-      - PIP to install all app requirements.
-      - MongoDB to develop your own database either locally or remotely on MongoDB Atlas. There's a series of steps to take in order to proceed with local deployment:
-      Make sure you got your database access (Username and URL as well as password)in MongoDB. when all got set, you need to connect with the Mongo DB Shell and your gitpod repository. CRUD(create, read, update, and delete) need to be work through the step.
+  1) in order to run this project locally on your own system, you will need the following installed:
+
+  - Python3 to run the application.
+  - PIP to install all app requirements.
+  - MongoDB to develop your own database either locally or remotely on MongoDB Atlas. There's a series of steps to take in order to proceed with local deployment:
+
+    Make sure you got your database access (Username and URL as well as password)in MongoDB. when all got set, you need to connect with the Mongo DB Shell and your gitpod repository. CRUD(create, read, update, and delete) need to be work through the step.
+     
       
-      I got three collections ( categories,foods,users). each collection can be add extra document and each document got an unique id. 
+I got three collections ( categories,foods,users). each collection can be add extra document and each document got an unique id. 
 
   categories 
   
@@ -430,13 +458,15 @@ I wanted to have a bright and energetic concept on my site. There are common con
   users 
   
   ![users](static/images/mongoDB/users_mongoDB.png)
+
+   2)  You should now be able to run the app locally using the python3 app.py command.
+
+   3) The app should now be running on localhost on an address similar to http://127.0.0.1:5000. Simply copy/paste this into the browser of your choice!
+
+   4) there is some sensitive data which we need to be hide in file "env.py" and it is able to hide file ".gitignore" there for you can secure your confidential data. you need to setup a secret key, which is required whenever using the flash() and session() functions of Flask from MongoDB. 
         
 
-    2)  You should now be able to run the app locally using the python3 app.py command.
-
-    3) The app should now be running on localhost on an address similar to http://127.0.0.1:5000. Simply copy/paste this into the browser of your choice!
-
-    4) there is some sensitive data which we need to be hide in file "env.py" and it is able to hide file ".gitignore" there for you can secure your confidential data. you need to setup a secret key, which is required whenever using the flash() and session() functions of Flask from MongoDB. 
+   
 
 
 ### Remote Deployment  
@@ -469,7 +499,7 @@ I wanted to have a bright and energetic concept on my site. There are common con
 
     2) Primary front-end framework from [materialize](https://materializecss.com/)
 
-    3) Korean food recipe and containes[BBCGOODFOOD](https://www.bbcgoodfood.com/)/[maangchi](https://www.maangchi.com/)
+    3) Korean food recipe and containes [BBCGOODFOOD](https://www.bbcgoodfood.com/) / [maangchi](https://www.maangchi.com/)
     
     4) Grammar and spelling checked from [Grammarly](www.grammarly.com/)
     
@@ -479,7 +509,7 @@ I wanted to have a bright and energetic concept on my site. There are common con
 
   most of images I used I referenced below (Pixabay) and else below
 
-    1) logo created by myself I used this tool [logo](https://www.canva.com/)
+    1) logo created by myself I used this tool [canva](https://www.canva.com/)
     2) [Bibimbap](https://pixabay.com/photos/food-photography-korean-bibimbap-2610863/)
     3) [Korean fied chicken](https://pixabay.com/photos/chicken-korean-dish-food-fry-521097/)
     4) [Fried rice](https://pixabay.com/photos/kimchi-fried-rice-fried-rice-rice-241051/)

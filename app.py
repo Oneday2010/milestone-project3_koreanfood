@@ -29,7 +29,7 @@ def get_foods():
 def search():
     query = request.form.get("query")
     foods = list(mongo.db.foods.find({"$text": {"$search": query}}))
-    return render_template("foods.html", foods=foods)  
+    return render_template("foods.html", foods=foods)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -145,7 +145,8 @@ def edit_recipes(foods_id):
 
     foods = mongo.db.foods.find_one({"_id": ObjectId(foods_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_recipes.html", foods=foods, categories=categories)
+    return render_template(
+        "edit_recipes.html", foods=foods, categories=categories)
 
 
 @app.route("/delete_recipes/<foods_id>")
@@ -159,6 +160,7 @@ def delete_recipes(foods_id):
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
