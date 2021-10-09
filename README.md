@@ -393,31 +393,41 @@ There are six form tests images below.
 
     All pages have no issue found. same comments such as  blows image with all the pages
 
- ![W3C CSS Validator](static/images/css_validator.png)
+    ![W3C CSS Validator](static/images/css_validator.png)
 
  - [Esprima Syntax Validator tool](https://esprima.org/demo/validate.html) 
 
     All pages have no issue found.
 
- ![Esprima Syntax Validator tool](static/images/javascript_validate.png)
+    ![Esprima Syntax Validator tool](static/images/javascript_validate.png)
 
  - [Pep8 Online tool](http://pep8online.com/) 
 
     No issues found.
 
-  
+   ![Pep8 Validator tool](static/images/python_validator.png)
 
  #### Project bug and solution
 
   - bug1
 
-![bug1](static/images/bugimg/bug1.png)
+   ![bug1](static/images/bugimg/bug1.png)
 
-  
+   This bug happened when the app was running and I use an image directory with  (img src="static/images/k_food_logo.png"), It works fine on other pages but only the profile page didn't work. So I used  url_for() method
+   (img src="{{ url_for('static', filename='images/k_food_logo.png') }}")
+    and it worked all the app without issue. 
 
 
   - bug2
-  
+
+  Python code validator found three issues
+
+  trailing whitespace/no newline at end of files python/line too long.
+I fixed tide up the code and add a blank line end of the file as well as cut off the long line. fixed the issue eventually. 
+
+ - bug3
+ 
+  There is an issue with the search function tool. It doesn't search properly and only searches properly when the food name is input collected on the search form. I tried to add another index on mongoDB and try to change the code on python, it doesn't recognise the index. Need to improve in future. 
 
  
   
