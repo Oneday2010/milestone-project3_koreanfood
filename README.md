@@ -410,7 +410,14 @@ There are six forms tests images below.
 
    ![Pep8 Validator tool](static/images/python_validator.png)
 
- #### Project bug and solution
+
+  - [Documentation on using Developer Tools Lighthouse](https://developers.google.com/web/tools/lighthouse) 
+
+  ![Documentation on using Developer Tools Lighthouse](static/images/lighthouse.png)
+   
+
+
+#### Project bug and solution
 
   - bug1
 
