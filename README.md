@@ -56,6 +56,7 @@ It is a Korean food recipes contents sharing website that is intended to be acce
 ---
 
  Main target user : Korean food lovers in worldwide/visiter
+
 This website is aimed to engage each user by sharing their own Korean food recipe. the contents can be added, edit and delete and Creator only can create/edit/delete the contents. To be able to do that users need to register and log in with their id and password. Therefore site can be more secure and manageable by user information which will automatically collect on mongoDB database. 
 
 
@@ -236,6 +237,8 @@ I wanted to have a bright and energetic concept on my site. There are common con
 
  - Would be nice add page about Korean food cooking tools and other section related Korea food culture.  
 
+ - search tool need to improve. Still seems limited to get proper search with some words. 
+
  
 
 ## Technologies
@@ -298,7 +301,7 @@ I wanted to have a bright and energetic concept on my site. There are common con
 
  - Forms testing
 
-  * There are five test users registered in this site. 
+   ### There are five test users registered in this site. 
     
     - username : Amy21 - password : test2021 ( 9 recipes updated by this username)
     - username : Admin - password : admintest ( 6 recips updated by this user name)
@@ -308,7 +311,7 @@ I wanted to have a bright and energetic concept on my site. There are common con
 
 -> login with Amy21 or Admin, site shows edit/delete button. 
 
-There are six form tests images below. 
+There are six forms tests images below. 
 
 1.  login 
 
@@ -426,7 +429,7 @@ There are six form tests images below.
 I fixed tide up the code and add a blank line end of the file as well as cut off the long line. fixed the issue eventually. 
 
  - bug3
- 
+
   There is an issue with the search function tool. It doesn't search properly and only searches properly when the food name is input collected on the search form. I tried to add another index on mongoDB and try to change the code on python, it doesn't recognise the index. Need to improve in future. 
 
  
@@ -435,9 +438,37 @@ I fixed tide up the code and add a blank line end of the file as well as cut off
 
  #### Testing user story goal
 
+ 
   * ##### As as First Time User:
 
-            
+
+    " I'm just looking for an easy way to cook simple Korean food, I don't want to register"
+
+    ->  Without registration, I still can check all the recipes that other users upload.  
+
+    " I don't want to search too many Korean food recipes. I'm just looking for Korean dessert"
+
+    -> I used a search tool to search desert. It just shows Korean dessert. 
+    
+    " I got my own Korean food recipe, I love to share with others"
+
+    -> After registration, I could upload my own Korean food recipe. Moreover, I could edit and delete later.   
+
+  * ##### As as Regular  User:
+
+     "I want to change my recipe, I find a better way to cook"
+
+
+     -> Under my contents there is function for edit and delete button. It was very useful. 
+
+
+    " I don't want others can edit my contents"
+
+     -> my contents only be able to edit after login with my account.
+
+    " I don't interest any other contents apart from Korean food recipe, want to simply upload mine and learn from others. wish I could leave the comment though"
+
+    -> simple and easy way to use the site. all the links connected collect pages. Userfriendly interface and search function save time to search recipe. Comment add function would be better. 
 
 
 
@@ -446,10 +477,12 @@ I fixed tide up the code and add a blank line end of the file as well as cut off
 
  ### Local Deployment
 
-  1) in order to run this project locally on your own system, you will need the following installed:
+  1) In order to run this project locally on your own system, you will need the following installed:
 
   - Python3 to run the application.
   - PIP to install all app requirements.
+       -> pip3 install Flask / pip3 install flask-pymongo / pip3 install dnspython
+
   - MongoDB to develop your own database either locally or remotely on MongoDB Atlas. There's a series of steps to take in order to proceed with local deployment:
 
     Make sure you got your database access (Username and URL as well as password)in MongoDB. when all got set, you need to connect with the Mongo DB Shell and your gitpod repository. CRUD(create, read, update, and delete) need to be work through the step.
@@ -469,11 +502,11 @@ I got three collections ( categories,foods,users). each collection can be add ex
   
   ![users](static/images/mongoDB/users_mongoDB.png)
 
-   2)  You should now be able to run the app locally using the python3 app.py command.
+   2)  Make sure you improt OS to app.py and eny.py and add other step of python code. You should now be able to run the app locally using the python3 app.py command eventually. 
 
    3) The app should now be running on localhost on an address similar to http://127.0.0.1:5000. Simply copy/paste this into the browser of your choice!
 
-   4) there is some sensitive data which we need to be hide in file "env.py" and it is able to hide file ".gitignore" there for you can secure your confidential data. you need to setup a secret key, which is required whenever using the flash() and session() functions of Flask from MongoDB. 
+   4) there is some sensitive data which we need to be hide in file "env.py" and it is able to hide file ".gitignore". Therefor you can secure your confidential data. you need to setup a secret key, which is required whenever using the flash() and session() functions of Flask from MongoDB. 
         
 
    
